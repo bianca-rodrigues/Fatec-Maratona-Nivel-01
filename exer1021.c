@@ -3,10 +3,10 @@
 int main()
 {
 
-float n;
+double n;
 int cem, cinquenta, vinte, dez, cinco, dois,um, cinqCents, vinCincoCents, dezCents, cincoCents, umCents, nota, resto;
 
-scanf("%f", &n);
+scanf("%lf", &n);
 
 nota = n;
 
@@ -14,75 +14,77 @@ cem =  nota/ 100;
 
 resto = nota % 100;
 
-printf("%i\n", cem);
-
 cinquenta = resto/50;
 
 resto = resto%50;
 
-printf("%i\n", cinquenta);
-
 vinte = resto/20;
-
-printf("%i\n", vinte);
 
 resto = resto%20;
 
 dez = resto/10;
 
-printf("%i\n", dez);
-
 resto = resto%10;
 
 cinco = resto/5;
-
-printf("%i\n", cinco);
 
 resto = resto%5;
 
 dois = resto/2;
 
-printf("%i\n", dois);
-
 resto = resto%2;
 
 um = resto/1;
 
-printf("%i\n", um);
-
 resto = resto%1;
 
-printf("%i\n", resto);
+resto = resto*100;
 
-cinqCents = resto/0.5;
+cinqCents = resto/50;
 
-printf("%i", cinqCents);
+resto = resto%50;
+/*
+vinCincoCents = resto/25;
 
-resto = resto%0.5;
+resto = resto%25;
 
-vinCincoCents = resto/0.25;
+dezCents = resto/10;
 
-printf("%i", vinCincoCents);
+resto = resto%10;
 
-resto = resto%0.25;
+cincoCents = resto/5;
 
-dezCents = resto/0.1;
+resto = resto%5;
 
-printf("%i", dezCents);
+umCents = resto/5;*/
 
-resto = resto%0.1;
+printf ("NOTAS:\n");
 
-cincoCents = resto/0.05;
+printf ("%i nota(s) de R$ 100.00\n", cem);
 
-printf("%i", cincoCents);
+printf ("%i nota(s) de R$ 50.00\n", cinquenta);
 
-resto = resto%0.05;
+printf ("%i nota(s) de R$ 20.00\n", vinte);
 
-umCents = resto/0.01;
+printf ("%i nota(s) de R$ 10.00\n", dez);
 
-printf("%i", umCents);
+printf ("%i nota(s) de R$ 5.00\n", cinco);
 
-resto = resto%0.01;
+printf ("%i nota(s) de R$ 2.00\n", dois);
+
+printf ("MOEDAS:\n");
+
+printf ("%i moeda(s) de R$ 1.00\n", um);
+
+printf ("%i moeda(s) de R$ 0.50\n", cinqCents);
+
+printf ("%i moeda(s) de R$ 0.25\n", vinCincoCents);
+
+printf ("%i moeda(s) de R$ 0.10\n", dezCents);
+
+printf ("%i moeda(s) de R$ 0.05\n", cincoCents);
+
+printf ("%i moeda(s) de R$ 0.01\n", umCents);
 
 
     return 0;
