@@ -43,7 +43,7 @@ resto = resto*100;
 cinqCents = resto/50;
 
 resto = resto%50;
-/*
+
 vinCincoCents = resto/25;
 
 resto = resto%25;
@@ -56,7 +56,7 @@ cincoCents = resto/5;
 
 resto = resto%5;
 
-umCents = resto/5;*/
+umCents = resto/5;
 
 printf ("NOTAS:\n");
 
